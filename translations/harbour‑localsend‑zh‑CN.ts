@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="zh-CN">
+<TS version="2.1" language="zh_CN">
 <context>
     <name>AboutPage</name>
     <message>
@@ -12,16 +12,8 @@
         <translation>这是 Sailfish OS 的非官方 LocalSend 客户端。文件在你自己的网络中直接设备互传，无需账号、无需服务器、不需要互联网连接。</translation>
     </message>
     <message>
-        <source>Devices find each other with multicast. Plenty of networks block it — guest Wi‑Fi almost always does. When that happens, Scan network on the main page finds them the slow way instead.</source>
-        <translation>设备依靠组播互相发现。很多网络会屏蔽组播，访客 Wi‑Fi 几乎都会屏蔽。遇到这种情况，可以在主页使用扫描网络，以较慢方式查找设备。</translation>
-    </message>
-    <message>
         <source>Encrypted with a stored key</source>
         <translation>使用已保存密钥加密</translation>
-    </message>
-    <message>
-        <source>Encryption is off, so transfers use plain HTTP on port %1 and are readable by anyone who can watch the network. On a home network or your own hotspot that is nobody; on café or office Wi‑Fi it may not be.</source>
-        <translation>加密已关闭，传输将在 %1 端口使用明文 HTTP，同一网络下的任何人都可以窃听传输内容。家庭网络或个人热点环境下风险较小；咖啡馆或办公室公共 Wi‑Fi 环境存在风险。</translation>
     </message>
     <message>
         <source>Fingerprint</source>
@@ -54,10 +46,6 @@
     <message>
         <source>Not affiliated with the LocalSend project. Released under the MIT licence.</source>
         <translation>本项目与 LocalSend 官方项目无关联，基于 MIT 许可证发布。</translation>
-    </message>
-    <message>
-        <source>Owner‑only files</source>
-        <translation>仅所有者访问的文件</translation>
     </message>
     <message>
         <source>Protocol</source>
@@ -95,6 +83,18 @@
         <source>What other devices know this one by. Read it out to somebody to let them confirm it really is you they are sending to.</source>
         <translation>其他设备识别本机的标识。可以念出该指纹，让对方确认接收对象确实是你的设备。</translation>
     </message>
+    <message>
+        <source>Owner-only files</source>
+        <translation>仅本机所有者可见</translation>
+    </message>
+    <message>
+        <source>Encryption is off, so transfers use plain HTTP on port %1 and are readable by anyone who can watch the network. On a home network or your own hotspot that is nobody; on café or office Wi-Fi it may not be.</source>
+        <translation>加密已关闭，传输使用 %1 端口的明文 HTTP，任何能监听网络的人都能看到内容。在家庭网络或你自己的热点上没有外人；在咖啡馆或办公 Wi-Fi 上则未必。</translation>
+    </message>
+    <message>
+        <source>Devices find each other with multicast. Plenty of networks block it — guest Wi-Fi almost always does. When that happens, Scan network on the main page finds them the slow way instead.</source>
+        <translation>设备通过组播互相发现。很多网络会屏蔽组播——访客 Wi-Fi 几乎总是如此。出现这种情况时，可在主页面用“扫描网络”以较慢的方式找到它们。</translation>
+    </message>
 </context>
 <context>
     <name>AddDevicePage</name>
@@ -105,10 +105,6 @@
     <message>
         <source>Address</source>
         <translation>地址</translation>
-    </message>
-    <message>
-        <source>For a device on another network, behind a VPN, or on a Wi‑Fi that keeps clients apart. Both plain and encrypted transports are tried.</source>
-        <translation>适用于跨网络、VPN 后设备，或是客户端相互隔离的 Wi‑Fi。会同时尝试明文与加密两种传输方式。</translation>
     </message>
     <message>
         <source>Forget</source>
@@ -141,6 +137,10 @@
     <message>
         <source>Remembered addresses</source>
         <translation>已记住的地址</translation>
+    </message>
+    <message>
+        <source>For a device on another network, behind a VPN, or on a Wi-Fi that keeps clients apart. Both plain and encrypted transports are tried.</source>
+        <translation>适用于位于其他网络、VPN 之后，或客户端彼此隔离的 Wi-Fi 上的设备。会同时尝试明文和加密两种传输方式。</translation>
     </message>
 </context>
 <context>
@@ -180,13 +180,11 @@
         <source>%n file(s)</source>
         <translation>
             <numerusform>%n 个文件</numerusform>
-            <numerusform>%n 个文件</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n nearby</source>
         <translation>
-            <numerusform>附近共 %n 台设备</numerusform>
             <numerusform>附近共 %n 台设备</numerusform>
         </translation>
     </message>
@@ -239,7 +237,6 @@
     <message numerus="yes">
         <source>%n transfer(s)</source>
         <translation>
-            <numerusform>%n 条传输记录</numerusform>
             <numerusform>%n 条传输记录</numerusform>
         </translation>
     </message>
@@ -295,7 +292,7 @@
 <context>
     <name>MainPage</name>
     <message>
-        <source>A device with this name used a different key before. Nothing stops one device on a network from announcing another one's name.</source>
+        <source>A device with this name used a different key before. Nothing stops one device on a network from announcing another one&apos;s name.</source>
         <translation>该设备名曾经使用过别的密钥。局域网中设备可以冒充其他设备名称广播。</translation>
     </message>
     <message>
@@ -516,7 +513,6 @@
         <source>%n file(s)</source>
         <translation>
             <numerusform>%n 个文件</numerusform>
-            <numerusform>%n 个文件</numerusform>
         </translation>
     </message>
     <message>
@@ -593,7 +589,6 @@
         <source>%n file(s)</source>
         <translation>
             <numerusform>%n 个文件</numerusform>
-            <numerusform>%n 个文件</numerusform>
         </translation>
     </message>
     <message>
@@ -634,7 +629,6 @@
     <message numerus="yes">
         <source>%n file(s) ready</source>
         <translation>
-            <numerusform>已准备好 %n 个文件</numerusform>
             <numerusform>已准备好 %n 个文件</numerusform>
         </translation>
     </message>
@@ -695,7 +689,6 @@
     <message numerus="yes">
         <source>%n device(s)</source>
         <translation>
-            <numerusform>%n 台设备</numerusform>
             <numerusform>%n 台设备</numerusform>
         </translation>
     </message>
@@ -848,10 +841,6 @@
         <translation>设置</translation>
     </message>
     <message>
-        <source>Stops the device suspending mid‑transfer. Uses more battery.</source>
-        <translation>避免传输过程设备休眠，会消耗更多电量。</translation>
-    </message>
-    <message>
         <source>Stored as a salted hash, so it cannot be shown again — only replaced.</source>
         <translation>PIN 以加盐哈希保存，无法查看明文，仅支持重新设置。</translation>
     </message>
@@ -891,6 +880,10 @@
         <source>While transferring</source>
         <translation>传输过程</translation>
     </message>
+    <message>
+        <source>Stops the device suspending mid-transfer. Uses more battery.</source>
+        <translation>防止设备在传输过程中休眠，会更耗电。</translation>
+    </message>
 </context>
 <context>
     <name>TransferFileDelegate</name>
@@ -929,7 +922,6 @@
         <source>Saved %n file(s)</source>
         <translation>
             <numerusform>已保存 %n 个文件</numerusform>
-            <numerusform>已保存 %n 个文件</numerusform>
         </translation>
     </message>
     <message>
@@ -939,7 +931,6 @@
     <message numerus="yes">
         <source>Sent %n file(s)</source>
         <translation>
-            <numerusform>已发送 %n 个文件</numerusform>
             <numerusform>已发送 %n 个文件</numerusform>
         </translation>
     </message>
@@ -969,7 +960,7 @@
     </message>
 </context>
 <context>
-    <name>harbour‑localsend</name>
+    <name>harbour-localsend</name>
     <message>
         <source>%1 wants to send you files</source>
         <translation>%1 想要向你发送文件</translation>
@@ -978,26 +969,23 @@
         <source>%n file(s)</source>
         <translation>
             <numerusform>%n 个文件</numerusform>
-            <numerusform>%n 个文件</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <source>%n file(s) received</source>
         <translation>
             <numerusform>已接收 %n 个文件</numerusform>
-            <numerusform>已接收 %n 个文件</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <source>%n file(s) sent</source>
-        <translation>
-            <numerusform>已发送 %n 个文件</numerusform>
-            <numerusform>已发送 %n 个文件</numerusform>
         </translation>
     </message>
     <message>
         <source>Transfer incomplete</source>
         <translation>传输未完成</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n file(s) sent</source>
+        <translation>
+            <numerusform>已发送 %n 个文件</numerusform>
+        </translation>
     </message>
 </context>
 </TS>
